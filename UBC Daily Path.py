@@ -36,6 +36,7 @@ def plot_route(fn):
             
     ox.plot_graph_routes(G, routes, orig_dest_node_color= 'b')
 
+#change the csv file here
 plot_route("Tuesday.csv")
 
 
