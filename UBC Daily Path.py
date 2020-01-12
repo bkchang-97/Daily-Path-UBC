@@ -4,16 +4,6 @@ import folium
 import pandas as pd
 from geopandas.io import file
 
-#For my Project 3, I have decided to design a function called plot_route that will take in a csv file
-#with my daily schedule for school and plot a map of UBC showing where I go throughout the day, with
-#node markers for locations I visit and highlighted paths for the shortest path it takes for me to
-#walk there. I wanted to change the color of the start and end nodes in order to distinguish them
-#from my "path nodes" however I was unable to change specific node colors or overlay two graphs.
-#I realized however that because of my use of ox.plot_graph_routes, the path node markers were being
-#created twice and therefore have a slightly darker coloration that distinguishes them from the start
-#and end. My function plot_route will take in 'fn' which represents the file name of the CSV file as
-# a string, I have included a few days as CSV files which will produce different paths.
-
 UBC = ox.gdf_from_place('UBC')
 
 toshow = ox.project_gdf(UBC)
